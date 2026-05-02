@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#1A1A2E"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⏱ TimeFlow"
+        android:textSize="28sp"
+        android:textColor="#E94560"
+        android:textStyle="bold"
+        android:layout_marginBottom="48dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:cardCornerRadius="120dp"
+        app:cardElevation="12dp"
+        app:cardBackgroundColor="#16213E"
+        android:layout_marginBottom="48dp">
+
+        <TextView
+            android:id="@+id/timeDisplayLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="00:00"
+            android:textSize="56sp"
+            android:textColor="#0F3460"
+            android:textStyle="bold"
+            android:fontFamily="monospace"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/activateServiceButton"
+        android:layout_width="240dp"
+        android:layout_height="56dp"
+        android:text="START TIMER"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E94560"
+        android:layout_marginBottom="16dp"
+        app:cornerRadius="28dp"/>
+
+    <Button
+        android:id="@+id/terminateServiceButton"
+        android:layout_width="240dp"
+        android:layout_height="56dp"
+        android:text="STOP TIMER"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0F3460"
+        android:enabled="false"
+        app:cornerRadius="28dp"/>
+
+</LinearLayout>
